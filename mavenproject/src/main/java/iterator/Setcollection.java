@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Setcollection {
 	public static void main(String[] args) {
-		HashSet<String>varname=new HashSet<String>();
+		HashSet<String> varname=new HashSet<String>();
 		varname.add("hai");
 		varname.add("welcome");
 		varname.add("to java class");
@@ -12,7 +12,7 @@ public class Setcollection {
 		System.out.println(varname.remove("hai"));
 		varname.remove("hai");
 		System.out.println(varname);
-		if(varname.contains("welcome"));
+		if(varname.contains("welcome"))
 		{
 		
 		System.out.println("value present");
