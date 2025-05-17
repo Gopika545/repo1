@@ -1,8 +1,35 @@
 package seleniumBasics;
 
-public class HandlingLocators {
+import org.openqa.selenium.By;
 
-	public static void main(String[] args) {
+public class HandlingLocators extends Base {
+	
+
+	public void verifyLocators()
+	
+	{
+		driver.findElement(By.id("button-one"));
+		driver.findElement(By.className("form-control"));
+		driver.findElement(By.tagName("button"));
+		
+		driver.findElement(By.linkText("Simple Form Demo"));
+		driver.findElement(By.partialLinkText("Simple Form"));
+		driver.findElement(By.cssSelector("input[id=['single-input-field']"));
+				
+				
+				
+				
+				
+				
+	}
+        public static void main(String[] args) {
+		HandlingLocators locators = new HandlingLocators ();
+		locators.intilisationBrowser();
+		locators.verifyLocators();
+		locators.browserClose();
+
+	
+		
 		// TODO Auto-generated method stub
 
 	}
