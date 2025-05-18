@@ -11,7 +11,7 @@ public class HandlingLocators extends Base {
 		driver.findElement(By.id("button-one"));
 		driver.findElement(By.className("form-control"));
 		driver.findElement(By.tagName("button"));
-		
+		driver.findElement(By.name("viewport"));
 		driver.findElement(By.linkText("Simple Form Demo"));
 		driver.findElement(By.partialLinkText("Simple Form"));
 		driver.findElement(By.cssSelector("input[id=['single-input-field']"));
