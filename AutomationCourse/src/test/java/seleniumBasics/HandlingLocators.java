@@ -18,10 +18,7 @@ public class HandlingLocators extends Base {
 				
 				
 				
-				
-				
-				
-	}
+		}
         public static void main(String[] args) {
 		HandlingLocators locators = new HandlingLocators ();
 		locators.intilisationBrowser();
