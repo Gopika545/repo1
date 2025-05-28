@@ -9,7 +9,7 @@ public class Base {
 	public WebDriver driver;
 	
 public void intilisationBrowser() {
-	driver = new EdgeDriver(); 
+	 WebDriver driver = new ChromeDriver(); 
 	
 	driver.get("https://selenium.qabible.in/");
 	driver.manage().window().maximize();
