@@ -5,7 +5,7 @@ import java.util.List;
 public class Collection2 {
 
 	public static void main(String[] args) {
-		List<String> s =new List<String>();
+		List<String> s =new ArrayList<String>();
 		s.add("hai");
 		s.add("welcome");
 		s.add("to java");
