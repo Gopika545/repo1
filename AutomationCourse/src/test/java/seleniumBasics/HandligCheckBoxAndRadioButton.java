@@ -33,7 +33,7 @@ public class HandligCheckBoxAndRadioButton  extends Base{
 		
 		
 		
-		// TODO Auto-generated method stub
+	
 
 	}
 

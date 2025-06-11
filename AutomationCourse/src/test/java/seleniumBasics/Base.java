@@ -13,6 +13,7 @@ public WebDriver driver;
 		
 		driver.navigate().to("https://selenium.qabible.in");
 		driver.manage().window().maximize();
+		
 	}
 		public void browserClose()
 		

@@ -2,6 +2,8 @@ package testScript;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import page.LoginPage;
@@ -11,12 +13,12 @@ import utilities.ExcelUtility;
 public class LoginTest extends BaseTestNG{
 @Test
 public void verifyUserLoginwithValidCredentials() throws IOException {
-	//WebElement usernamefield = driver.findElement(By.id("user-name"));
-	//usernamefield.sendKeys("standard_user");
-	//WebElement passwordfield = driver.findElement(By.id("password"));
-	//passwordfield.sendKeys("secret_sauce");
-	//WebElement loginbutton = driver.findElement(By.id("login-button"));
-	//loginbutton.click();
+	WebElement usernamefield = driver.findElement(By.id("user-name"));
+	usernamefield.sendKeys("standard_user");
+	WebElement passwordfield = driver.findElement(By.id("password"));
+	passwordfield.sendKeys("secret_sauce");
+	WebElement loginbutton = driver.findElement(By.id("login-button"));
+	loginbutton.click();
 	String username = ExcelUtility.getstring(0, 0, "LoginPage");
 	String password = ExcelUtility.getstring(0, 1, "LoginPage");
 	
