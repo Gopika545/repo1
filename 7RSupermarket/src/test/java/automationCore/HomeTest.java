@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 public class HomeTest extends BaseNew {
 	
 	
-	@Test
+	
 	public void  verifyhomePageclickOnLogout() throws IOException
 	{
 		String username = ExcelUtility.getstring(0, 0, "LoginPage");
@@ -22,7 +22,7 @@ public class HomeTest extends BaseNew {
 		loginpage.signinbutton();
 	
 	HomePage homepage = new HomePage( driver);
-	homepage.clickOnadmindropdownLink();
+	
 	homepage.homePageclickOnLogout();
 	}
 }

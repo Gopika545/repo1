@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class AdminUserTest extends BaseNew{
 	@Test
-	public void verifyadminUserClick() throws IOException
+	public void verifyClickOnadminUser() throws IOException
 	{
 		String username = ExcelUtility.getstring(0, 0, "LoginPage");
 		String password = ExcelUtility.getstring(0, 1, "LoginPage");
@@ -18,8 +18,8 @@ public class AdminUserTest extends BaseNew{
 		adminuser.enterUsernameonUsernameField(username);
 		adminuser.enterPasswordonPasswordField(password);
 		adminuser.signinbutton();
-		adminuser.adminuserOnClick();
-		adminuser.clickOnNewAdminUserButton();
+		adminuser.clickOnAdminUserButton();
+		adminuser.clickAddUserButton();
 		adminuser.addnewAdminUserName();
 		adminuser.enterpasswordonpasswordfield();
 		adminuser.clickOnUserType();
@@ -39,6 +39,7 @@ public class AdminUserTest extends BaseNew{
 		adminuser.enterUsernameonUsernameField(username);
 		adminuser.enterPasswordonPasswordField(password);
 		adminuser.signinbutton();
+		adminuser.clickOnAdminUserButton();
 		adminuser.clickOnSearchButton();
 		adminuser.clickOnSearchUserType();
 		adminuser.clickOnSearchadminButton();

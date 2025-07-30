@@ -16,6 +16,7 @@ public class HomePage {
 	@FindBy(name="username")private WebElement usernamefield;
 	@FindBy(name="password")private WebElement passwordfield;
 	@FindBy(xpath= "//*[@id=\"login-form\"]/div/div/div[3]/div[2]/button")private WebElement signinButton;
+	@FindBy(xpath="document.querySelector(\"body > div > nav > ul.navbar-nav.ml-auto > li > a\")")private WebElement adminButton;
 	@FindBy(xpath="//a[@data-toggle=\"dropdown\" ]") private WebElement adminDropDownLink;
 	@FindBy(xpath = "/html/body/div/nav/ul[2]/li/div/a[2]")private WebElement clickonlogout;
 	
@@ -23,6 +24,11 @@ public class HomePage {
 	public void clickOnadmindropdownLink()
 	{
 		adminDropDownLink.click();
+	}
+	public void clickOnAdminButton()
+	
+	{
+		adminButton.click();
 	}
 	
 	public void homePageclickOnLogout()

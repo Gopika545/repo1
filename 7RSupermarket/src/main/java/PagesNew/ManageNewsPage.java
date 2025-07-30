@@ -15,17 +15,16 @@ public  class ManageNewsPage {
 	@FindBy(name="username")private WebElement usernamefield;
 	@FindBy(name="password")private WebElement passwordfield;
 	@FindBy(xpath= "//*[@id=\"login-form\"]/div/div/div[3]/div[2]/button")private WebElement signinButton;
-	
-	@FindBy(xpath="/html/body/div/div[1]/section/div/div/div[9]/div/a")private WebElement clickManageNews;
-	@FindBy(xpath="\"//textarea[@id=\\\"news\\\"]")private WebElement newButton;	
-	@FindBy(xpath="//*[@id=\"news\"]")private WebElement newsfield;	
-	@FindBy(xpath="//*[@id=\"form\"]/div/div[2]/button")private WebElement saveButton;
-	@FindBy(xpath="/html/body/div/div[1]/section/div[1]/a[2]")private WebElement searchButton;
-	@FindBy(xpath="//*[@id=\"srdiv\"]/div/div/div/div[2]/form/div/div[1]/input")private WebElement searchfield;
-	@FindBy(xpath="//*[@id=\"srdiv\"]/div/div/div/div[2]/form/div/div[2]/button")private WebElement searchBoxButton;
-	@FindBy(xpath="//*[@id=\"srdiv\"]/div/div/div/div[2]/form/div/div[2]/a")private WebElement resetButton;
-	@FindBy(className="alert alert-success")private WebElement newsAlert;
-	@FindBy(xpath="/html/body/div/div[1]/section/div[4]/div[2]/table/tbody/tr/td[1]")private WebElement searchfieldAssert;
+	@FindBy(xpath="//p[text()='Manage News']")private WebElement ManageNewsButton;
+	@FindBy(xpath="//a[@onclick='click_button(1)']")private WebElement newButton;	
+	@FindBy(xpath="//textarea[@name='news']")private WebElement newsfield;	
+	@FindBy(xpath="//button[@type='submit']")private WebElement saveButton;
+	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")private WebElement searchButton;
+	@FindBy(xpath="//input[@type='text']")private WebElement searchfield;
+	@FindBy(xpath="//button[@class='btn btn-danger btn-fix']")private WebElement searchBoxButton;
+	@FindBy(xpath="//a[@class='btn btn-default btn-fix']")private WebElement resetButton;
+	@FindBy(css="alert alert-success")private WebElement newsAlert;
+	@FindBy(xpath="//*[text()='Kerala gods own country']")private WebElement searchfieldAssert;
 	
 	public void enterUsernameonUsernameField(String username)
 	{
@@ -41,9 +40,9 @@ public  class ManageNewsPage {
 		signinButton.click();
 	
 	}
-	public void userClickOnManagerNews()
+	public void clickOnManagerNews()
 	{
-		clickManageNews.click();
+		ManageNewsButton.click();
 
 	}
 	public void clickOnNewButton()
@@ -55,16 +54,19 @@ public  class ManageNewsPage {
 		newsfield.sendKeys("Kerala god own country");
 		saveButton.click();
 	}
-	public void enterSearchOnSearchButton()
+	public void clickOnSearchButton()
 	{
 		searchButton.click();
 	}
-	public void enterSearchOnSearchfield(String news)
+	public void SearchOnSearchfield()
 	
 	{
 		searchfield.sendKeys("Kerala god own country");
+	}
+	public void clickOnSearachbutton()
+	{
 		searchBoxButton.click();
-		resetButton.click();
+		//resetButton.click();
 	}
 	public boolean savednewsAlert()
 	
@@ -73,7 +75,7 @@ public  class ManageNewsPage {
 	}
 	public boolean searchnewsAssert()
 	{
-		return searchnewsAssert();
+		return searchfieldAssert.isDisplayed();
 	}
 	
 }

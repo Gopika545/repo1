@@ -17,10 +17,11 @@ public class ManageCategoryTest extends BaseNew {
 		managecategorypage.enterUsernameonUsernameField(username);
 		managecategorypage.enterPasswordonPasswordField(password);
 		managecategorypage.signinbutton();
-		managecategorypage. clickOnManageCategoryButton();
-		managecategorypage.ClickOnNewButton();
+		managecategorypage. clickOnManageCategoryinfo();
+		managecategorypage.ClickOnAddButton();
+		
 		managecategorypage.ClickOnSaveButton();
-		managecategorypage.enterCategoryField("Category");
+		managecategorypage.enterCategoryField("Vegetables");
 	}
 	
 		
@@ -33,10 +34,10 @@ public class ManageCategoryTest extends BaseNew {
 			managecategorypage.enterUsernameonUsernameField(username);
 			managecategorypage.enterPasswordonPasswordField(password);
 			managecategorypage.signinbutton();
-			managecategorypage. clickOnManageCategoryButton();
-			managecategorypage.ClickOnNewButton();
-			managecategorypage.enterCategoryField("Category");
-			managecategorypage.enterSearchButton("Category");
+			managecategorypage. clickOnManageCategoryinfo();
+			managecategorypage.ClickOnAddButton();
+			managecategorypage.enterCategoryField("Vegetables");
+			managecategorypage.enterSearchButton("Vegetables");
 			
 			
 

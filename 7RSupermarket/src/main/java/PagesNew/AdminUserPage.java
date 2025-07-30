@@ -17,17 +17,17 @@ public class AdminUserPage {
 	@FindBy(name="username")private WebElement usernamefield;
 	@FindBy(name="password")private WebElement passwordfield;
 	@FindBy(xpath= "//*[@id=\"login-form\"]/div/div/div[3]/div[2]/button")private WebElement signinButton;
-	@FindBy(xpath="/html/body/div/div[1]/section/div/div/div[1]/div/a")private WebElement adminUserButton;
-	@FindBy(xpath="/html/body/div/div[1]/section/div[1]/a[1]")private WebElement newButton;	
-	@FindBy(xpath="//*[@id=\"username\"]")private WebElement username; 
-	@FindBy(xpath="//*[@id=\"user_type\"]")private WebElement usertype;
-	@FindBy(xpath="//*[@id=\"password\"]")private WebElement password ;
-	@FindBy(xpath="//*[@id=\"adddiv\"]/div/div/div/form/div[2]/button")private WebElement saveButton;
-	@FindBy(xpath="/html/body/div/div[1]/section/div[1]/a[2]")private WebElement searchadminButton;
-	@FindBy(xpath="//*[@id=\"un\"]")private WebElement searchButtonfield ;
-	@FindBy(xpath="//*[@id=\"ut\"]")private WebElement  searchusertype;
-	@FindBy(xpath="//*[@id=\"srdiv\"]/div/div/div/div[2]/form/div/div[3]/button")private WebElement searchbutton;
-	@FindBy(xpath="//*[@id=\"srdiv\"]/div/div/div/div[2]/form/div/div[3]/a")private WebElement resetButton;
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin']")private WebElement adminUserinfo;
+	@FindBy(xpath="//a[@onclick='click_button(1)']")private WebElement clickAddUser;	
+	@FindBy(xpath="//[@id='username']")private WebElement username; 
+	@FindBy(xpath="//[@id='user_type']")private WebElement usertype;
+	@FindBy(xpath="//[@id='password']")private WebElement password ;
+	@FindBy(xpath="//button[@name='Create']")private WebElement saveButton;
+	@FindBy(xpath="//a[@onclick='click_button(2)']")private WebElement searchadminButton;
+	@FindBy(id="un")private WebElement searchButtonfield ;
+	@FindBy(id="ut")private WebElement  searchusertype;
+	@FindBy(name="Search")private WebElement searchbutton;
+	@FindBy(name="btn btn-default btn-fix")private WebElement resetButton;
 	@FindBy(xpath="/html/body/div/div[1]/section/div[2]/div/div[1]")private WebElement adminUserAlert;
 	@FindBy(xpath="/html/body/div/div[1]/section/div[2]/div/div[3]/div[2]/table/thead/tr/th[1]")private WebElement searchadminAssert;
 	public void enterUsernameonUsernameField(String username)
@@ -43,23 +43,23 @@ public class AdminUserPage {
 	{
 		signinButton.click();
 	}
-public void adminuserOnClick()
+public void clickOnAdminUserinfo()
 {
-	adminUserButton.click();
+	adminUserinfo.click();
 }
-public void  clickOnNewAdminUserButton()
+public void  clickAddUserButton()
 {
-	newButton.click();
+	clickAddUser.click();
 }
 public void addnewAdminUserName()
 {
-	username.sendKeys("Gopika");
+	username.sendKeys("ikshit");
 	
 }
 public void clickOnUserType()
 {
 	Select select = new Select(usertype);
-			select.selectByValue("admin");
+			select.selectByValue("staff");
 }
 public void enterpasswordonpasswordfield()
 {
@@ -71,7 +71,7 @@ public void clickOnSearchadminButton()
 }
 public void searchOnSearchButtonField()
 {
-	searchButtonfield.sendKeys("Gopika");
+	searchButtonfield.sendKeys("ikshit");
 }
 public void clickOnSearchUserType()
 {
@@ -95,51 +95,80 @@ public String searchAdminUserAlert()
 {
 	return(searchadminAssert.getText());
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-	newButton.click();
 }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+

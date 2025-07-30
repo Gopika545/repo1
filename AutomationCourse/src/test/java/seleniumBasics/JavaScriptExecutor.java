@@ -12,6 +12,8 @@ public class JavaScriptExecutor extends Base {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", showMessageButton);
 js.executeScript("window.scrollBy(0,350)", "");
+js.executeScript("window.scrollBy(0,-350)", "");
+
 		
 	}
 

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\AKHIL M S\AppData\Local\Temp\testng-eclipse--1260581770\testng-customsuite.xml</span>
+                    <span>C:\Users\AKHIL M S\AppData\Local\Temp\testng-eclipse-1813587504\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="automationCore.ManageNewsTest" class="method navigator-link" hash-for-method="verifyUserCanAddNewNews">verifyUserCanAddNewNews</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="automationCore.ManageCategoryTest" class="method navigator-link" hash-for-method="verifyUsercreateNewCategory">verifyUsercreateNewCategory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,34 +121,21 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">automationCore.ManageNewsTest</span>
+              <span class="class-name">automationCore.ManageCategoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserCanAddNewNews">
-                  </a> <!-- verifyUserCanAddNewNews -->
-                  <span class="method-name">verifyUserCanAddNewNews</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:309)
-	at org.openqa.selenium.By.className(By.java:100)
-	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:42)
-	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:83)
-	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:82)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:32)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76)
-	at PagesNew.ManageNewsPage.&lt;init&gt;(ManageNewsPage.java:13)
-	at automationCore.ManageNewsTest.verifyUserCanAddNewNews(ManageNewsTest.java:17)
+                  <a name="verifyUsercreateNewCategory">
+                  </a> <!-- verifyUsercreateNewCategory -->
+                  <span class="method-name">verifyUsercreateNewCategory</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\AKHIL M S\OneDrive\Desktop\New folder\TestDataNew.xlsx (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
+	at utilities.ExcelUtility.getstring(ExcelUtility.java:19)
+	at automationCore.ManageCategoryTest.verifyUsercreateNewCategory(ManageCategoryTest.java:14)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -184,7 +171,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AKHIL M S\AppData\Local\Temp\testng-eclipse--1260581770\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\AKHIL M S\AppData\Local\Temp\testng-eclipse-1813587504\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -193,11 +180,11 @@ Driver info: driver.version: unknown
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;automationCore.ManageNewsTest&quot;&gt;
+      &lt;class name=&quot;automationCore.ManageCategoryTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyUserCanAddNewNews&quot;/&gt;
+          &lt;include name=&quot;verifyUsercreateNewCategory&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- automationCore.ManageNewsTest --&gt;
+      &lt;/class&gt; &lt;!-- automationCore.ManageCategoryTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -239,14 +226,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserCanAddNewNews')
-data.setCell(0, 2, 'automationCore.ManageNewsTest')
-data.setCell(0, 3, 592);
+data.setCell(0, 1, 'verifyUsercreateNewCategory')
+data.setCell(0, 2, 'automationCore.ManageCategoryTest')
+data.setCell(0, 3, 26);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 592 ms</span>
+              <span class="suite-total-time">Total running time: 26 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -265,9 +252,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">automationCore.ManageNewsTest</span>
+              <span class="ignored-class-name">automationCore.ManageCategoryTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyUserAbleToSearchOnSearchfield</span>
+                <span class="ignored-method-name">verifyenterOnSearchButton</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -279,20 +266,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">automationCore.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">automationCore.ManageCategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">intilisationBrowser</span>
+                <span class="method-name">initilisationBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyUserCanAddNewNews</span>
-                <span class="method-start">5537 ms</span>
+                <span class="method-name">verifyUsercreateNewCategory</span>
+                <span class="method-start">5561 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose</span>
-                <span class="method-start">6137 ms</span>
+                <span class="method-start">5590 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

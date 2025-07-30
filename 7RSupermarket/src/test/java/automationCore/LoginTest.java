@@ -8,7 +8,7 @@ import PagesNew.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends BaseNew {
-	@Test
+	@Test(priority=1,description="login with valid password", retryAnalyzer = retry.Retry.class)
 	public void verifyUserLoginwithValidPassword() throws IOException
 	{
 		String username = ExcelUtility.getstring(0, 0, "LoginPage");
@@ -20,7 +20,7 @@ public class LoginTest extends BaseNew {
 				
 	}
 				
-	@Test
+	@Test(priority=2,description="login with Invalid password", retryAnalyzer = retry.Retry.class)
 	public void verifyUserLoginwithInvalidPassword() throws IOException
 	{
 		String username = ExcelUtility.getstring(1, 0, "LoginPage");
@@ -30,7 +30,7 @@ public class LoginTest extends BaseNew {
 		loginpage.enterPasswordonPasswordField(password);
 		loginpage.signinbutton();
 	}
-	@Test
+	@Test(priority=3,description="Invalidlogin with valid password", retryAnalyzer = retry.Retry.class)
 	public void verifyInvalidUserLoginwithValidPassword() throws IOException
 	{
 		String username = ExcelUtility.getstring(2, 0, "LoginPage");
@@ -41,7 +41,7 @@ public class LoginTest extends BaseNew {
 		loginpage.enterPasswordonPasswordField(password);
 		loginpage.signinbutton();	
 	}
-	@Test
+	@Test(priority=4,description="Invalidlogin with Invalid password", retryAnalyzer = retry.Retry.class)
 	public void verifyInvalidUserLoginwithInvalidPassword() throws IOException
 	{
 		String username = ExcelUtility.getstring(3, 0, "LoginPage");

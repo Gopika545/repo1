@@ -16,15 +16,14 @@ public class ManageCategoryPage {
 	@FindBy(name="username")private WebElement usernamefield;
 	@FindBy(name="password")private WebElement passwordfield;
 	@FindBy(xpath= "//*[@id=\"login-form\"]/div/div/div[3]/div[2]/button")private WebElement signinButton;
-	@FindBy(xpath="/html/body/div/div[1]/section/div/div/div[9]/div/div[1]/p") private WebElement clickmanagebutton;
-	@FindBy(xpath="/html/body/div/div[1]/section/div/div/div[9]/div/a")private WebElement manageCategoryButton ;
-	@FindBy(xpath="/html/body/div/div[1]/section/div[1]/a[1]")private WebElement newButton;
-	@FindBy(xpath="//*[@id=\"category\"]")private WebElement categoryfield ;
-	@FindBy(xpath="//*[@id=\"form\"]/div/div[5]/button")private WebElement saveButton ;
-	@FindBy(xpath="/html/body/div/div[1]/section/div[1]/a[2]")private WebElement searchButton  ;
-	@FindBy(xpath="//*[@id=\"srdiv\"]/div/div/div/div[2]/form/div/div[1]/input")private WebElement searchButtonField ;
-	@FindBy(xpath="//*[@id=\"srdiv\"]/div/div/div/div[2]/form/div/div[2]/button")private WebElement searchbutton  ;
-	@FindBy(xpath="//*[@id=\"srdiv\"]/div/div/div/div[2]/form/div/div[2]/a")private WebElement resetButton  ;
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category']") private WebElement clickmanageinfo;
+	@FindBy(xpath="//a[@onclick='click_button(1)']") private WebElement manageCategoryNewButton;
+	@FindBy(id="category")private WebElement categoryfield ;
+	@FindBy(xpath="//button[type='submit']")private WebElement saveButton ;
+	@FindBy(xpath="//a[@onclick='click_button(2)']")private WebElement searchButton  ;
+	@FindBy(xpath="//input[@placeholder='Category']")private WebElement searchButtonField ;
+	@FindBy(xpath="//button[@name='Search']")private WebElement searchbutton  ;
+	@FindBy(xpath="//a[@type='button']")private WebElement resetButton  ;
 	
 		public void enterUsernameonUsernameField(String username)
 		{
@@ -40,13 +39,14 @@ public class ManageCategoryPage {
 			signinButton.click();
 			
 		}
-		public void clickOnManageCategoryButton()
+		public void clickOnManageCategoryinfo()
 		{
-		manageCategoryButton.click();	
+			
+		clickmanageinfo.click();	
 		}
-		public void ClickOnNewButton()
+		public void ClickOnAddButton()
 		{
-			newButton.click();
+			manageCategoryNewButton.click();
 		}
 		public void ClickOnSaveButton()
 		{
